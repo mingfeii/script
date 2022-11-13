@@ -1,0 +1,154 @@
+
+C # commits
+C core signals -> 
+C {asic_io pad signals}, 
+C {the io pad signals that must be the same}# 
+C {the io pad signals must be that same}#
+C for exampel: 
+C core signals -> 
+C {xx, xx, xx, ..., xx},
+C {xx, xx, ...}# 
+C {xx, xx, ...}#
+
+###########################################################################
+# test IO_XXX1 (SIG2)
+C a error check method # tb_asic.asic_top.u_asic_core.u_AAA.io_sig2[20:0] -> tb_asic.asic_top.u_asic_io.io_xxxx[20:0]
+tb_asic.asic_top.u_asic_core.u_AAA.io_sig2[20:0] -> 
+{tb_asic.asic_top.u_asic_io.u_EMI_A0.SIG2, tb_asic.asic_top.u_asic_io.u_S_PRECHARGE.SIG2, tb_asic.asic_top.u_asic_io.u_SM_BS_N0.SIG2, tb_asic.asic_top.u_asic_io.u_S_BA0.SIG2, tb_asic.asic_top.u_asic_io.u_S_DQM0.SIG2, tb_asic.asic_top.u_asic_io.u_S_WE_N.SIG2, tb_asic.asic_top.u_asic_io.u_S_CAS_N.SIG2, tb_asic.asic_top.u_asic_io.u_S_RAS_N.SIG2, tb_asic.asic_top.u_asic_io.u_S_CKE.SIG2, tb_asic.asic_top.u_asic_io.u_SCLK.SIG2, tb_asic.asic_top.u_asic_io.u_OE_B.SIG2, tb_asic.asic_top.u_asic_io.u_WEN_B.SIG2, tb_asic.asic_top.u_asic_io.u_CS4_B.SIG2, tb_asic.asic_top.u_asic_io.u_CS3_B.SIG2, tb_asic.asic_top.u_asic_io.u_CS2_B.SIG2, tb_asic.asic_top.u_asic_io.u_CS1_B.SIG2, tb_asic.asic_top.u_asic_io.u_CS0_B.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D24.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D16.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D8.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D0.SIG2}, 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_A0.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A1.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A2.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A3.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A4.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A5.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A6.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A7.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A8.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A9.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A10.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A11.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A12.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A13.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A14.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A15.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A16.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A17.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A18.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A19.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A20.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_A21.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_SM_BS_N0.SIG2, tb_asic.asic_top.u_asic_io.u_SM_BS_N1.SIG2, tb_asic.asic_top.u_asic_io.u_SM_BS_N2.SIG2, tb_asic.asic_top.u_asic_io.u_SM_BS_N3.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_S_BA0.SIG2, tb_asic.asic_top.u_asic_io.u_S_BA1.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_S_DQM0.SIG2, tb_asic.asic_top.u_asic_io.u_S_DQM1.SIG2, tb_asic.asic_top.u_asic_io.u_S_DQM2.SIG2, tb_asic.asic_top.u_asic_io.u_S_DQM3.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D24.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D25.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D26.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D27.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D28.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D29.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D30.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D31.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D0.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D1.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D2.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D3.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D4.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D5.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D6.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D7.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D8.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D9.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D10.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D11.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D12.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D13.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D14.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D15.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D16.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D17.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D18.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D19.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D20.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D21.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D22.SIG2, tb_asic.asic_top.u_asic_io.u_EMI_D23.SIG2}#
+
+
+###########################################################################
+# test IO_SR_XXX1 (SR corresponding to IO_XXX and IO_XXX1)
+tb_asic.asic_top.u_asic_core.u_AAA.io_sr_sig3[20:0] -> 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_A0.SIG3, tb_asic.asic_top.u_asic_io.u_S_PRECHARGE.SIG3, tb_asic.asic_top.u_asic_io.u_SM_BS_N0.SIG3, tb_asic.asic_top.u_asic_io.u_S_BA0.SIG3, tb_asic.asic_top.u_asic_io.u_S_DQM0.SIG3, tb_asic.asic_top.u_asic_io.u_S_WE_N.SIG3, tb_asic.asic_top.u_asic_io.u_S_CAS_N.SIG3, tb_asic.asic_top.u_asic_io.u_S_RAS_N.SIG3, tb_asic.asic_top.u_asic_io.u_S_CKE.SIG3, tb_asic.asic_top.u_asic_io.u_SCLK.SIG3, tb_asic.asic_top.u_asic_io.u_OE_B.SIG3, tb_asic.asic_top.u_asic_io.u_WEN_B.SIG3, tb_asic.asic_top.u_asic_io.u_CS4_B.SIG3, tb_asic.asic_top.u_asic_io.u_CS3_B.SIG3, tb_asic.asic_top.u_asic_io.u_CS2_B.SIG3, tb_asic.asic_top.u_asic_io.u_CS1_B.SIG3, tb_asic.asic_top.u_asic_io.u_CS0_B.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D24.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D16.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D8.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D0.SIG3}, 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_A0.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A1.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A2.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A3.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A4.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A5.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A6.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A7.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A8.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A9.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A10.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A11.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A12.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A13.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A14.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A15.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A16.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A17.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A18.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A19.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A20.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_A21.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_SM_BS_N0.SIG3, tb_asic.asic_top.u_asic_io.u_SM_BS_N1.SIG3, tb_asic.asic_top.u_asic_io.u_SM_BS_N2.SIG3, tb_asic.asic_top.u_asic_io.u_SM_BS_N3.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_S_BA0.SIG3, tb_asic.asic_top.u_asic_io.u_S_BA1.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_S_DQM0.SIG3, tb_asic.asic_top.u_asic_io.u_S_DQM1.SIG3, tb_asic.asic_top.u_asic_io.u_S_DQM2.SIG3, tb_asic.asic_top.u_asic_io.u_S_DQM3.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D24.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D25.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D26.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D27.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D28.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D29.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D30.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D31.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D0.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D1.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D2.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D3.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D4.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D5.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D6.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D7.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D8.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D9.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D10.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D11.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D12.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D13.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D14.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D15.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_EMI_D16.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D17.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D18.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D19.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D20.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D21.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D22.SIG3, tb_asic.asic_top.u_asic_io.u_EMI_D23.SIG3}#
+
+
+
+###########################################################################
+# test IO_XXX2 (SIG1)
+C tb_asic.asic_top.u_asic_core.u_AAA.io_sig1[15:0] -> tb_asic.asic_top.u_asic_io.xxx1[15:0]
+tb_asic.asic_top.u_asic_core.u_AAA.io_sig1[15:0] -> 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIO0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DO0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_RI6.SIG1, tb_asic.asic_top.u_asic_io.u_BB_RO.SIG1, tb_asic.asic_top.u_asic_io.u_CLKA.SIG1, tb_asic.asic_top.u_asic_io.u_UART4_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART3_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART2_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART1_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART0_RX.SIG1, tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG1, tb_asic.asic_top.u_asic_io.u_IC_CLK.SIG1, tb_asic.asic_top.u_asic_io.u_SPI1_CLK.SIG1, tb_asic.asic_top.u_asic_io.u_SPI0_CLK.SIG1}, 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIO0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO1.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO2.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO3.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO4.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO5.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO6.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO7.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO8.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO9.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO10.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO11.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO12.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO13.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO14.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIO15.SIG1}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIN0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN1.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN2.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN3.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN4.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN5.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN6.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN7.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN8.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN9.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN10.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN11.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN12.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN13.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN14.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DIN15.SIG1}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DO0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DO1.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DO2.SIG1}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DI0.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI1.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI2.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI3.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI4.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI5.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI6.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI7.SIG1, tb_asic.asic_top.u_asic_io.u_BB_DI8.SIG1}#
+
+{tb_asic.asic_top.u_asic_io.u_UART4_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART4_TX.SIG1}# 
+{tb_asic.asic_top.u_asic_io.u_UART3_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART3_TX.SIG1}#
+{tb_asic.asic_top.u_asic_io.u_UART2_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART2_TX.SIG1}#
+{tb_asic.asic_top.u_asic_io.u_UART1_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART1_TX.SIG1}# 
+{tb_asic.asic_top.u_asic_io.u_UART0_RX.SIG1, tb_asic.asic_top.u_asic_io.u_UART0_TX.SIG1}#
+{tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG1, tb_asic.asic_top.u_asic_io.u_I2C1_SDA.SIG1}#
+
+{tb_asic.asic_top.u_asic_io.u_IC_CLK.SIG1, tb_asic.asic_top.u_asic_io.u_IC_DATA.SIG1, tb_asic.asic_top.u_asic_io.u_IC_RST.SIG1}#
+
+{tb_asic.asic_top.u_asic_io.u_SPI1_CLK.SIG1, tb_asic.asic_top.u_asic_io.u_SPI1_CS.SIG1, tb_asic.asic_top.u_asic_io.u_SPI1_MISO.SIG1, tb_asic.asic_top.u_asic_io.u_SPI1_MOSI.SIG1}#
+
+{tb_asic.asic_top.u_asic_io.u_SPI0_CLK.SIG1, tb_asic.asic_top.u_asic_io.u_SPI0_CS.SIG1, tb_asic.asic_top.u_asic_io.u_SPI0_MISO.SIG1, tb_asic.asic_top.u_asic_io.u_SPI0_MOSI.SIG1}#
+
+C {tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG1, tb_asic.asic_top.u_asic_io.u_I2C1_SDA.SIG1, tb_asic.asic_top.u_asic_io.u_CLKB.SIG1}#
+
+
+
+###########################################################################
+# test IO_XXX3 (SIG2)
+tb_asic.asic_top.u_asic_core.u_AAA.io_sig2[15:0] -> 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIO0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DO0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_RI6.SIG2, tb_asic.asic_top.u_asic_io.u_BB_RO.SIG2, tb_asic.asic_top.u_asic_io.u_CLKA.SIG2, tb_asic.asic_top.u_asic_io.u_UART4_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART3_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART2_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART1_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART0_RX.SIG2, tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG2, tb_asic.asic_top.u_asic_io.u_IC_CLK.SIG2, tb_asic.asic_top.u_asic_io.u_SPI1_CLK.SIG2, tb_asic.asic_top.u_asic_io.u_SPI0_CLK.SIG2}, 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIO0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO1.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO2.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO3.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO4.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO5.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO6.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO7.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO8.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO9.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO10.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO11.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO12.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO13.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO14.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIO15.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIN0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN1.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN2.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN3.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN4.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN5.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN6.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN7.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN8.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN9.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN10.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN11.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN12.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN13.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN14.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DIN15.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DO0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DO1.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DO2.SIG2}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DI0.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI1.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI2.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI3.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI4.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI5.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI6.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI7.SIG2, tb_asic.asic_top.u_asic_io.u_BB_DI8.SIG2}#
+
+{tb_asic.asic_top.u_asic_io.u_UART4_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART4_TX.SIG2}# 
+{tb_asic.asic_top.u_asic_io.u_UART3_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART3_TX.SIG2}#
+{tb_asic.asic_top.u_asic_io.u_UART2_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART2_TX.SIG2}#
+{tb_asic.asic_top.u_asic_io.u_UART1_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART1_TX.SIG2}# 
+{tb_asic.asic_top.u_asic_io.u_UART0_RX.SIG2, tb_asic.asic_top.u_asic_io.u_UART0_TX.SIG2}#
+{tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG2, tb_asic.asic_top.u_asic_io.u_I2C1_SDA.SIG2}#
+
+{tb_asic.asic_top.u_asic_io.u_IC_CLK.SIG2, tb_asic.asic_top.u_asic_io.u_IC_DATA.SIG2, tb_asic.asic_top.u_asic_io.u_IC_RST.SIG2}#
+
+{tb_asic.asic_top.u_asic_io.u_SPI1_CLK.SIG2, tb_asic.asic_top.u_asic_io.u_SPI1_CS.SIG2, tb_asic.asic_top.u_asic_io.u_SPI1_MISO.SIG2, tb_asic.asic_top.u_asic_io.u_SPI1_MOSI.SIG2}#
+
+{tb_asic.asic_top.u_asic_io.u_SPI0_CLK.SIG2, tb_asic.asic_top.u_asic_io.u_SPI0_CS.SIG2, tb_asic.asic_top.u_asic_io.u_SPI0_MISO.SIG2, tb_asic.asic_top.u_asic_io.u_SPI0_MOSI.SIG2}#
+
+C {tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG2, tb_asic.asic_top.u_asic_io.u_I2C1_SDA.SIG2, tb_asic.asic_top.u_asic_io.u_CLKB.SIG2}#
+
+
+
+###########################################################################
+# test IO_SR_XXX2 (SIG3 corresponding to IO_XXX2 and IO_XXX3)
+tb_asic.asic_top.u_asic_core.u_AAA.io_sr_sig3[15:0] ->
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIO0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DO0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_RI6.SIG3, tb_asic.asic_top.u_asic_io.u_BB_RO.SIG3, tb_asic.asic_top.u_asic_io.u_CLKA.SIG3, tb_asic.asic_top.u_asic_io.u_UART4_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART3_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART2_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART1_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART0_RX.SIG3, tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG3, tb_asic.asic_top.u_asic_io.u_IC_CLK.SIG3, tb_asic.asic_top.u_asic_io.u_SPI1_CLK.SIG3, tb_asic.asic_top.u_asic_io.u_SPI0_CLK.SIG3}, 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIO0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO1.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO2.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO3.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO4.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO5.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO6.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO7.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO8.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO9.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO10.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO11.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO12.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO13.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO14.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIO15.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DIN0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN1.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN2.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN3.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN4.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN5.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN6.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN7.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN8.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN9.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN10.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN11.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN12.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN13.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN14.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DIN15.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DO0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DO1.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DO2.SIG3}# 
+
+{tb_asic.asic_top.u_asic_io.u_BB_DI0.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI1.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI2.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI3.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI4.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI5.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI6.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI7.SIG3, tb_asic.asic_top.u_asic_io.u_BB_DI8.SIG3}#
+
+{tb_asic.asic_top.u_asic_io.u_UART4_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART4_TX.SIG3}# 
+{tb_asic.asic_top.u_asic_io.u_UART3_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART3_TX.SIG3}#
+{tb_asic.asic_top.u_asic_io.u_UART2_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART2_TX.SIG3}#
+{tb_asic.asic_top.u_asic_io.u_UART1_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART1_TX.SIG3}# 
+{tb_asic.asic_top.u_asic_io.u_UART0_RX.SIG3, tb_asic.asic_top.u_asic_io.u_UART0_TX.SIG3}#
+{tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG3, tb_asic.asic_top.u_asic_io.u_I2C1_SDA.SIG3}#
+
+{tb_asic.asic_top.u_asic_io.u_IC_CLK.SIG3, tb_asic.asic_top.u_asic_io.u_IC_DATA.SIG3, tb_asic.asic_top.u_asic_io.u_IC_RST.SIG3}#
+
+{tb_asic.asic_top.u_asic_io.u_SPI1_CLK.SIG3, tb_asic.asic_top.u_asic_io.u_SPI1_CS.SIG3, tb_asic.asic_top.u_asic_io.u_SPI1_MISO.SIG3, tb_asic.asic_top.u_asic_io.u_SPI1_MOSI.SIG3}#
+
+{tb_asic.asic_top.u_asic_io.u_SPI0_CLK.SIG3, tb_asic.asic_top.u_asic_io.u_SPI0_CS.SIG3, tb_asic.asic_top.u_asic_io.u_SPI0_MISO.SIG3, tb_asic.asic_top.u_asic_io.u_SPI0_MOSI.SIG3}#
+
+C {tb_asic.asic_top.u_asic_io.u_I2C1_RST.SIG3, tb_asic.asic_top.u_asic_io.u_I2C1_SDA.SIG3, tb_asic.asic_top.u_asic_io.u_CLKB.SIG3}#
+
+
+###########################################################################
+C the last "###...###" section is necessary to avoid skip the last signal's force and check operation
