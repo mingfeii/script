@@ -15,7 +15,7 @@ parameter PASS_DW = 8;
 
 parameter RANDOM = 1'b1;
 
-parameter SMMOTH_RDY = 1'b0;
+parameter SMMOTH_RDY = 1'b1;
 
 
 logic [PHASE_DW-1:0] phase1;
@@ -126,7 +126,8 @@ always@(posedge clk or negedge rst_n)
     end else begin 
         if (icnt > 1025) phase_valid <= 1'b0;
         else if (phase_valid && phase_ready) begin 
-            phase_valid <= $urandom();
+            // phase_valid <= $urandom();
+            phase_valid <= 1;
             phase1 <= src1_mem[icnt+1];
             phase2 <= src2_mem[icnt+1];
             phase_frac <= frac_mem[icnt+1];
@@ -139,24 +140,41 @@ always@(posedge clk or negedge rst_n)
     end 
     
 
-xyz_rectify_phase_interp #(
-    .FBIT(FBIT),
-    .PHASE_DW(PHASE_DW)
-)DUT (
-.clk(clk),
-.rst_n(rst_n),
-.phase1       (phase1       ),
-.phase2       (phase2       ),
-.phase_frac   (phase_frac   ),
-.phase_valid  (phase_valid  ),
-.phase_ready  (phase_ready  ),
-.interp_phase (interp_phase ),
-.interp_valid (interp_valid ),
-.phase_pass_data(phase_pass_data),
-.interp_pass_data(interp_pass_data),
-.interp_ready (interp_ready )
+// xyz_rectify_phase_interp #(
+//     .FBIT(FBIT),
+//     .PHASE_DW(PHASE_DW)
+// )DUT (
+// .clk(clk),
+// .rst_n(rst_n),
+// .phase1       (phase1       ),
+// .phase2       (phase2       ),
+// .phase_frac   (phase_frac   ),
+// .phase_valid  (phase_valid  ),
+// .phase_ready  (phase_ready  ),
+// .interp_phase (interp_phase ),
+// .interp_valid (interp_valid ),
+// .phase_pass_data(phase_pass_data),
+// .interp_pass_data(interp_pass_data),
+// .interp_ready (interp_ready )
+
+// );
+
+
+
+nopipeline #(
+
+)pip2_U(
+    .clk(clk),
+    .rst_n(rst_n),
+
+    .ival(phase_valid),
+    .irdy(phase_ready),
+
+    .oval(interp_valid),
+    .ordy(interp_ready)
 
 );
+
 
 
 function reg [PHASE_DW-1:0] interpolate_phase(input [PHASE_DW-1:0] p1, input [PHASE_DW-1:0] p2,input [FBIT-1:0] f);
