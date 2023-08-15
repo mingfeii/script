@@ -1,5 +1,6 @@
 set hlsearch
 set showmatch
+set guifont=Consolas
 
 call plug#begin('~/.vim/plugged')
 
