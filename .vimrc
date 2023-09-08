@@ -1,6 +1,10 @@
 set hlsearch
+set guioptions+=m
+
 set showmatch
 set guifont=Consolas
+
+colorscheme desert
 
 call plug#begin('~/.vim/plugged')
 
@@ -30,6 +34,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'Valloric/YouCompleteMe'
 
+Plug 'preservim/nerdtree'
+
+
 " 在这里添加其他插件
 
 call plug#end()
@@ -37,3 +44,4 @@ call plug#end()
 " 在 ~/.vimrc 中添加以下配置
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 let g:ycm_key_invoke_completion = '<C-Space>'
+set nomousehide
