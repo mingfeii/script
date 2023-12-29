@@ -119,39 +119,29 @@ fi
 export INTELFPGAOCLSDKROOT="/home/s/intelFPGA/18.1/hld"
 
 export QSYS_ROOTDIR="/home/s/intelFPGA/18.1/quartus/sopc_builder/bin"
-
-
-
-
-export SYNOPSYS=/usr/synopsys 
-export VCS_HOME=$SYNOPSYS/vcs/vcs-mx/O-2018.09-SP2
-export PATH=$PATH:$VCS_HOME/bin
-export VERDI_HOME=$SYNOPSYS/verdi/verdi/Verdi_O-2018.09-SP2
-export FSDB_HOME=$VERDI_HOME/share/PLI/VCS/LINUX64
-
-export PATH=$PATH:$VERDI_HOME/bin:$VERDI_HOME/platform/LINUX64/bin
-export SCL_HOME=$SYNOPSYS/scl/scl/2018.06
-export PATH=$PATH:$SCL_HOME/linux64/bin
-alias lmli="lmgrd -c $SYNOPSYS/Synopsys.dat"
-export VCS_ARCH_OVERRIDE=linux
-export VCS_TARGET_ARCH=amd64
-
-alias vcs64="vcs -full64 -LDFLAGS -Wl,--no-as-needed"
-alias verdi64="verdi -full64 &"
-
-export LM_LICENSE_FILE=27000@PERCIPIO-PC
-
-#LICENSE
-export SNPSLMD_LICENSE_FILE="/usr/synopsys/Synopsys.dat"
-export SNPSLMD_LICENSE_FILE=27000@PERCIPIO-PC
-
-export PATH="/usr/questasim/questasim/bin":$PATH
-export PATH="/usr/questasim/questasim/RUVM_2021.2":$PATH
-export LM_LICENSE_FILE="/home/s/license/questasim/license.dat":$LM_LICENSE_FILE
 export PATH="/home/s/intelFPGA/18.1/quartus/bin/":$PATH
 
-PATH="/home/s/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/s/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/s/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/s/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/s/perl5"; export PERL_MM_OPT;
+export PATH="/home/s/software/questasim/questasim/linux_x86_64":$PATH
+export PATH="/home/s/software/questasim/questasim/RUVM_2021.2":$PATH
+export LM_LICENSE_FILE="/home/s/license/questasim/license.dat":$LM_LICENSE_FILE
+
+
+#####################
+# cadence
+#####################
+export INCISIVDIR=/opt/cadence/INCISIV152
+export VRST_HOME=/opt/cadence/INCISIV152
+export LM_LICENSE_FILE="/opt/cadence/license/cadence.dat":$LM_LICENSE_FILE
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cadence/INCISIV152/tools.lnx86/lib
+alias irun="/opt/cadence/INCISIV152/tools/bin/irun"
+alias simv="/opt/cadence/INCISIV152/tools/bin/simvision"
+alias simvision="/opt/cadence/INCISIV152/tools/bin/simvision -64 &"
+alias ncvlog="/opt/cadence/INCISIV152/tools/bin/ncvlog"
+alias ncsim="/opt/cadence/INCISIV152/tools/bin/ncvsim"
+alias ncelab="/opt/cadence/INCISIV152/tools/bin/ncelab"
+alias ncvhdl_p="/opt/cadence/INCISIV152/tools/bin/ncvhdl_p"
+export SPECMAN_HOME=$INCISIVDIR/components/sn
+export SPECMAN_DIR=$SPECMAN_HOME/
+export PATH="$PATH:$INCISIVDIR/bin"
+export PATH="$PATH:$INCISIVDIR/tools.lnx86/bin"
+export PATH="$PATH:$INCISIVDIR/tools.lnx86/dfII/bin"
